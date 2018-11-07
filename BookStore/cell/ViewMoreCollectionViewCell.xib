@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ViewMoreCollectionViewCell" id="gTV-IL-0wX" customClass="ViewMoreCollectionViewCell" customModule="BookStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="158"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="158"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cl-oD-nks">
+                        <rect key="frame" x="0.0" y="0.0" width="151" height="158"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book13" translatesAutoresizingMaskIntoConstraints="NO" id="NNn-V3-pxx">
+                                <rect key="frame" x="0.0" y="0.0" width="151" height="158"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NNn-V3-pxx" secondAttribute="bottom" id="5Nh-uc-gXM"/>
+                            <constraint firstItem="NNn-V3-pxx" firstAttribute="leading" secondItem="1cl-oD-nks" secondAttribute="leading" id="9vL-Fh-82X"/>
+                            <constraint firstItem="NNn-V3-pxx" firstAttribute="top" secondItem="1cl-oD-nks" secondAttribute="top" id="pVp-5y-GNa"/>
+                            <constraint firstAttribute="trailing" secondItem="NNn-V3-pxx" secondAttribute="trailing" id="yO1-wM-q3Y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="1cl-oD-nks" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NV8-0L-4Km"/>
+                <constraint firstAttribute="trailing" secondItem="1cl-oD-nks" secondAttribute="trailing" id="Saq-AN-4UW"/>
+                <constraint firstAttribute="bottom" secondItem="1cl-oD-nks" secondAttribute="bottom" id="VFe-5A-99c"/>
+                <constraint firstItem="1cl-oD-nks" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Y3z-1M-dvA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="191" height="175"/>
+            <connections>
+                <outlet property="bookImage" destination="NNn-V3-pxx" id="W0H-42-hGa"/>
+            </connections>
+            <point key="canvasLocation" x="-152.80000000000001" y="62.968515742128943"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Book13" width="200" height="240"/>
+    </resources>
+</document>

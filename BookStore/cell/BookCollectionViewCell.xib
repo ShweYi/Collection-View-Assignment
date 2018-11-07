@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCollectionViewCell" id="gTV-IL-0wX" customClass="BookCollectionViewCell" customModule="BookStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKb-9d-gBy">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book12" translatesAutoresizingMaskIntoConstraints="NO" id="5Ss-Lo-mJk">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5Ss-Lo-mJk" secondAttribute="bottom" id="RTY-qA-cu9"/>
+                            <constraint firstItem="5Ss-Lo-mJk" firstAttribute="top" secondItem="SKb-9d-gBy" secondAttribute="top" id="ZJD-Uh-xJ8"/>
+                            <constraint firstAttribute="trailing" secondItem="5Ss-Lo-mJk" secondAttribute="trailing" id="yNd-2K-Si7"/>
+                            <constraint firstItem="5Ss-Lo-mJk" firstAttribute="leading" secondItem="SKb-9d-gBy" secondAttribute="leading" id="zWf-d8-Fsh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SKb-9d-gBy" secondAttribute="bottom" id="EX3-VE-mEv"/>
+                <constraint firstItem="SKb-9d-gBy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="k2a-Pd-iq6"/>
+                <constraint firstAttribute="trailing" secondItem="SKb-9d-gBy" secondAttribute="trailing" id="kJW-h1-d5J"/>
+                <constraint firstItem="SKb-9d-gBy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="om2-Pi-LDj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="160" height="200"/>
+            <connections>
+                <outlet property="ivBook" destination="5Ss-Lo-mJk" id="ljK-Xs-el0"/>
+            </connections>
+            <point key="canvasLocation" x="22.399999999999999" y="114.24287856071965"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Book12" width="200" height="240"/>
+    </resources>
+</document>

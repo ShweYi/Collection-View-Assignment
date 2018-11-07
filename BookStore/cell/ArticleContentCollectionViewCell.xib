@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArticleContentCollectionViewCell" id="gTV-IL-0wX" customClass="ArticleContentCollectionViewCell" customModule="BookStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="252"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="252"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ID6-uI-Ftp">
+                        <rect key="frame" x="0.0" y="0.0" width="326" height="252"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Article1" translatesAutoresizingMaskIntoConstraints="NO" id="KjR-iD-tGV">
+                                <rect key="frame" x="8" y="8" width="310" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="NNb-i0-lhh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ဆံပင်ပုံစံက လူတစ်ယောက် အတွက် အလွန် အရေးကြီးတယ် စိုင်းစိုင်းခမ်းလှိုင်" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIT-xN-E30">
+                                <rect key="frame" x="8" y="166" width="310" height="38.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday, 2018-11-03 22:25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0x-HC-fPt">
+                                <rect key="frame" x="8" y="212.5" width="310" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KjR-iD-tGV" firstAttribute="top" secondItem="ID6-uI-Ftp" secondAttribute="top" constant="8" id="6Md-jH-sZk"/>
+                            <constraint firstItem="l0x-HC-fPt" firstAttribute="leading" secondItem="ID6-uI-Ftp" secondAttribute="leading" constant="8" id="8te-Kx-aJR"/>
+                            <constraint firstAttribute="trailing" secondItem="KjR-iD-tGV" secondAttribute="trailing" constant="8" id="G9O-zd-Dk8"/>
+                            <constraint firstItem="l0x-HC-fPt" firstAttribute="top" secondItem="hIT-xN-E30" secondAttribute="bottom" constant="8" id="OCy-5f-nCF"/>
+                            <constraint firstItem="KjR-iD-tGV" firstAttribute="leading" secondItem="ID6-uI-Ftp" secondAttribute="leading" constant="8" id="R2Y-L7-9e3"/>
+                            <constraint firstAttribute="trailing" secondItem="hIT-xN-E30" secondAttribute="trailing" constant="8" id="aBA-sT-oi4"/>
+                            <constraint firstItem="hIT-xN-E30" firstAttribute="leading" secondItem="ID6-uI-Ftp" secondAttribute="leading" constant="8" id="fmV-bQ-HUB"/>
+                            <constraint firstAttribute="trailing" secondItem="l0x-HC-fPt" secondAttribute="trailing" constant="8" id="k06-8r-qss"/>
+                            <constraint firstItem="hIT-xN-E30" firstAttribute="top" secondItem="KjR-iD-tGV" secondAttribute="bottom" constant="8" id="xKJ-E6-wAu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ID6-uI-Ftp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NYh-OM-Ihy"/>
+                <constraint firstAttribute="trailing" secondItem="ID6-uI-Ftp" secondAttribute="trailing" id="Yfn-pH-uX8"/>
+                <constraint firstAttribute="bottom" secondItem="ID6-uI-Ftp" secondAttribute="bottom" id="ZTb-go-V5X"/>
+                <constraint firstItem="ID6-uI-Ftp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hvf-lm-X6K"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="326" height="251"/>
+            <connections>
+                <outlet property="articleImage" destination="KjR-iD-tGV" id="7bR-9J-fV8"/>
+                <outlet property="articleReleaseDate" destination="l0x-HC-fPt" id="sJB-tF-Hb3"/>
+                <outlet property="articleTitle" destination="hIT-xN-E30" id="q6H-Gr-mP5"/>
+            </connections>
+            <point key="canvasLocation" x="-110.40000000000001" y="-22.488755622188908"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Article1" width="1200" height="800"/>
+    </resources>
+</document>
